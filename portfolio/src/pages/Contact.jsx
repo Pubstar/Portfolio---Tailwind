@@ -28,6 +28,7 @@ const Contact = () => {
             </header>
             <main className=' text-center'>
                 <form data-netlify="true" name='contact' className='flex flex-col justify-center items-center mb-4'>
+                    <input type="hidden" name="form-name" value="contact" />
                     <label htmlFor="name">Your name:</label>
                     <input className=' mb-4 w-96 text-black' type="text" name="name" id="name" />
                     <label htmlFor="email">Your email:</label>
