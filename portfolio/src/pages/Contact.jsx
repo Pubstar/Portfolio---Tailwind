@@ -5,7 +5,7 @@ import githubImg from '../images/github.png'
 const Contact = () => {
 
     function handleSubmit(e) {
-        e.preventDefault();
+        //e.preventDefault();
 
         document.getElementById('name').value = "";
         document.getElementById('email').value = "";
