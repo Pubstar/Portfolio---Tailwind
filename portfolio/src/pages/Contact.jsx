@@ -5,13 +5,26 @@ import githubImg from '../images/github.png'
 const Contact = () => {
 
     function handleSubmit(e) {
-        //e.preventDefault();
+        e.preventDefault();
 
-        document.getElementById('name').value = "";
-        document.getElementById('email').value = "";
-        document.getElementById('message').value = "";
+        const formData = new FormData(document.getElementById('contactForm'));
+        fetch(document.getElementById('contactForm').getAttribute('action'), {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/x-www-form-urlencoded;charset=UTF-8',
+                'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+            },
+            body: new URLSearchParams(formData).toString()
+        })
+            .then(res => {
+                if (res) {
+                    document.getElementById('name').value = "";
+                    document.getElementById('email').value = "";
+                    document.getElementById('message').value = "";
 
-        document.getElementById('success-text').style = { 'visibility': 'visible' };
+                    document.getElementById('success-text').style = { 'visibility': 'visible' };
+                }
+            });
     }
 
     return (
@@ -27,7 +40,7 @@ const Contact = () => {
                 </nav>
             </header>
             <main className=' text-center'>
-                <form netlify name='contact' className='flex flex-col justify-center items-center mb-4'>
+                <form netlify name='contact' id='contactForm' className='flex flex-col justify-center items-center mb-4'>
                     <input type="hidden" name="form-name" value="contact" />
                     <label htmlFor="name">Your name:</label>
                     <input className=' mb-4 w-96 text-black' type="text" name="name" id="name" />
