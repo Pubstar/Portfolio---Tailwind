@@ -3,7 +3,7 @@ import githubImg from '../images/github.png'
 
 const ProjectCard = (props) => {
     return (
-        <div className=" w-64 h-96 relative rounded-3xl overflow-hidden shadow-2xl shadow-black p-4 text-center">
+        <div className=" w-64 h-96 relative rounded-3xl overflow-hidden shadow-xl shadow-black/40 p-4 text-center">
             <span className="font-bold text-3xl z-20 relative">{props.name}</span>
             <p className=" z-20 relative mt-10">{props.description}</p>
             <div className=" z-20 w-56 h-20 border-t-2 border-white/40 flex items-center gap-8 justify-center absolute bottom-0">

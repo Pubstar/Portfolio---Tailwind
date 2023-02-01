@@ -1,6 +1,4 @@
 import React from 'react'
-import { Link } from "react-router-dom";
-import githubImg from '../images/github.png'
 
 const Contact = () => {
 
@@ -28,19 +26,9 @@ const Contact = () => {
     }
 
     return (
-        <div className=" min-h-screen px-8 py-12 bg-gradient-to-b from-blue-900 text-[#EDE7D9] font-sofia-sans h-full 2xl:px-80 xl:px-60 overflow-y-scroll">
-            <header className=" flex justify-between items-center mb-36">
-                <div className=' flex items-center gap-2'>
-                    <span className=" cursor-pointer font-semibold">Pieter Hoek</span>
-                    <img className=' w-6 h-6 cursor-pointer' onClick={() => { window.open('https://github.com/Pubstar') }} src={githubImg} alt="" />
-                </div>
-                <nav className=" flex gap-8">
-                    <Link to="/" className=" cursor-pointer">Home</Link>
-                    <Link to="contact" className=" cursor-pointer border-b-2 border-[#FFC914]">Contact</Link>
-                </nav>
-            </header>
+        <div className=' min-h-screen'>
             <main className=' text-center'>
-                <form netlify name='contact' id='contactForm' className='flex flex-col justify-center items-center mb-4'>
+                <form netlify name='contact' id='contactForm' className='flex flex-col justify-center items-center mb-4 bg-white/10 p-4 rounded-3xl'>
                     <input type="hidden" name="form-name" value="contact" />
                     <label htmlFor="name">Your name:</label>
                     <input className=' mb-4 w-96 text-black' type="text" name="name" id="name" />
