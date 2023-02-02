@@ -10,7 +10,7 @@ const ProjectCard = (props) => {
                 <img onClick={() => { window.open(props.githubLink) }} className=" w-9 h-9 cursor-pointer" src={githubImg} alt="Github Logo" />
                 <a className=" bg-[#FFC914] rounded-lg p-2 text-[#2E282A]" target="_blank" rel="noreferrer" href={props.livePageLink}>Visit live page</a>
             </div>
-            <div className=" w-full h-full bg-black/70 absolute z-10 top-0 left-0"></div>
+            <div className=" w-full h-full bg-black/80 absolute z-10 top-0 left-0"></div>
             <img className=" w-full h-full absolute object-cover top-0 left-0" src={props.bg} alt="project card background" />
         </div>
     )

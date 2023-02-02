@@ -20,7 +20,7 @@ const Homepage = () => {
                 <div className='mb-36 bg-white/10 pt-4 px-4 pb-2 rounded-3xl md:pt-10 md:px-10 md:pb-4'>
                     <p>Hello! My name is Pieter, a web developer. I love JavaScript and building things for the web.
                         My primary focus is creating responsive, easy to use websites. If you are looking to hire please use the contact page, or send me an email at:
-                        <a className=' font-semibold cursor-pointer' href="mailto: pieterhoek@msn.com">Pieterhoek@msn.com</a></p>
+                        <a className=' font-semibold cursor-pointer' href="mailto: pieterhoek@msn.com"> Pieterhoek@msn.com</a></p>
                     <div className=' flex items-center w-12 gap-2 mt-8'>
                         <a target="_blank" rel="noreferrer" href="https://github.com/Pubstar">
                             <img className='grayscale' src={githubImg} alt="" />
@@ -34,8 +34,8 @@ const Homepage = () => {
             <section className='py-8'>
                 <h2 className=" text-4xl font-bold mb-8">My Work</h2>
                 <div className=" flex gap-12 flex-wrap items-center justify-center bg-white/10 p-4 rounded-3xl">
-                    <ProjectCard bg={moviesImg} name="Netflix UI" description="I rebuild the Netflix homepage using React and Tailwindcss, the website has no functionality as I was primarliy focused on getting the design right." githubLink="https://github.com/Pubstar/netflix" livePageLink="https://leafy-yeot-9e427e.netlify.app/" />
                     <ProjectCard bg={reactImg} name="React + Express Login" description="This app uses express, react, and mongoDB. It's a simple register/login system. The goal here was to have a backend API that the front-end utilizes." githubLink="https://github.com/Pubstar/React-Fullstack" livePageLink="https://react-fullstack-client.onrender.com/" />
+                    <ProjectCard bg={moviesImg} name="Netflix UI" description="I rebuild the Netflix homepage using React and Tailwindcss, the website has no functionality as I was primarliy focused on getting the design right." githubLink="https://github.com/Pubstar/netflix" livePageLink="https://leafy-yeot-9e427e.netlify.app/" />
                     <ProjectCard bg={steamImg} name="Steam Profile Info" description="Use the Steam API to get information about a users steam profile. For now you will need the users SteamID, regular usernames do not work." githubLink="https://github.com/Pubstar/Steam-User-Info" livePageLink="https://steamchecker.onrender.com/" />
                 </div>
             </section>
