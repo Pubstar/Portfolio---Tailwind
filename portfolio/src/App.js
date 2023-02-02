@@ -11,7 +11,9 @@ function App() {
         <header className=" flex justify-between items-center mb-36 bg-white/10 pb-8 pt-4 px-4 rounded-b-3xl md:px-8">
           <div className=' flex items-center gap-2'>
             <span className=" cursor-pointer font-semibold">Pieter Hoek</span>
-            <img className=' w-6 h-6 cursor-pointer' onClick={() => { window.open('https://github.com/Pubstar') }} src={githubImg} alt="" />
+            <a target="_blank" rel="noreferrer" href="https://github.com/Pubstar">
+              <img className=' w-6 h-6 cursor-pointer' src={githubImg} alt="" />
+            </a>
           </div>
           <nav className=" flex gap-4 md:gap-8">
             <Link to="/" className=" cursor-pointer">Home</Link>

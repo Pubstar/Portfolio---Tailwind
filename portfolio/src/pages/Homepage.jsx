@@ -1,5 +1,8 @@
 import React from 'react'
 import ProjectCard from '../components/ProjectCard';
+import githubImg from '../images/github.png'
+import linkedinImg from '../images/linkedin.png'
+
 import moviesImg from '../images/movies.jpg'
 import reactImg from '../images/react.jpg'
 import steamImg from '../images/steam.jpg'
@@ -12,6 +15,22 @@ const Homepage = () => {
                 <h1 className=" text-5xl mb-16 font-bold md:text-6xl">Front-end developer.</h1>
                 <p className=" text-4xl">I'm a passionate <span className=" border-b-4 border-[#FFC914]">webdeveloper</span> with the ability to create great things, usually using <span className=" border-b-4 border-[#FFC914]">React</span></p>
             </main>
+            <section>
+                <h2 className='text-4xl font-bold mb-8'>About me</h2>
+                <div className='mb-36 bg-white/10 pt-4 px-4 pb-2 rounded-3xl md:pt-10 md:px-10 md:pb-4'>
+                    <p>Hello! My name is Pieter, a web developer. I love JavaScript and building things for the web.
+                        My primary focus is creating responsive, easy to use websites. If you are looking to hire please use the contact page, or send me an email at:
+                        <a className=' font-semibold cursor-pointer' href="mailto: pieterhoek@msn.com">Pieterhoek@msn.com</a></p>
+                    <div className=' flex items-center w-12 gap-2 mt-8'>
+                        <a target="_blank" rel="noreferrer" href="https://github.com/Pubstar">
+                            <img className='grayscale' src={githubImg} alt="" />
+                        </a>
+                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/pieter-hoek/">
+                            <img className='grayscale' src={linkedinImg} alt="" />
+                        </a>
+                    </div>
+                </div>
+            </section>
             <section className='py-8'>
                 <h2 className=" text-4xl font-bold mb-8">My Work</h2>
                 <div className=" flex gap-12 flex-wrap items-center justify-center bg-white/10 p-4 rounded-3xl">
