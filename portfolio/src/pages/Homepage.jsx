@@ -7,9 +7,9 @@ import steamImg from '../images/steam.jpg'
 const Homepage = () => {
     return (
         <div>
-            <main className="mb-36 bg-white/10 p-10 rounded-3xl">
-                <h2 className=" text-[#FFC914] text-2xl">Hello, my name is Pieter,</h2>
-                <h1 className=" text-6xl mb-16 font-bold">Front-end developer.</h1>
+            <main className="mb-36 bg-white/10 p-4 rounded-3xl md:p-10">
+                <h2 className=" text-[#FFC914] text-xl md:text-2xl">Hello, my name is Pieter,</h2>
+                <h1 className=" text-5xl mb-16 font-bold md:text-6xl">Front-end developer.</h1>
                 <p className=" text-4xl">I'm a passionate <span className=" border-b-4 border-[#FFC914]">webdeveloper</span> with the ability to create great things, usually using <span className=" border-b-4 border-[#FFC914]">React</span></p>
             </main>
             <section className='py-8'>
