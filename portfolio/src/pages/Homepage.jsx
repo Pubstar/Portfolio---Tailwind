@@ -7,6 +7,7 @@ import moviesImg from '../images/movies.jpg'
 import reactImg from '../images/react.jpg'
 import steamImg from '../images/steam.jpg'
 import chatboxImg from '../images/chatbox.jpg'
+import ArrowRightSvg from '../images/arrow-right-svg.svg'
 
 const Homepage = () => {
     return (
@@ -30,6 +31,19 @@ const Homepage = () => {
                             <img className='grayscale' src={linkedinImg} alt="" />
                         </a>
                     </div>
+                </div>
+            </section>
+            <section>
+                <h2 className='text-4xl font-bold mb-8'>Skills</h2>
+                <div className='mb-36 bg-white/10 p-4 rounded-3xl md:p-10'>
+                    <p>Here are a few technologies I’ve been working with recently:</p>
+                    <ul className='mt-6'>
+                        <li><img className='w-4 inline mr-2' src={ArrowRightSvg} alt="" />JavaScript</li>
+                        <li><img className='w-4 inline mr-2' src={ArrowRightSvg} alt="" />React</li>
+                        <li><img className='w-4 inline mr-2' src={ArrowRightSvg} alt="" />Node.js</li>
+                        <li><img className='w-4 inline mr-2' src={ArrowRightSvg} alt="" />Firebase</li>
+                        <li><img className='w-4 inline mr-2' src={ArrowRightSvg} alt="" />MongoDB</li>
+                    </ul>
                 </div>
             </section>
             <section className='py-8'>
