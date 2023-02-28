@@ -6,6 +6,7 @@ import linkedinImg from '../images/linkedin.png'
 import moviesImg from '../images/movies.jpg'
 import reactImg from '../images/react.jpg'
 import steamImg from '../images/steam.jpg'
+import chatboxImg from '../images/chatbox.jpg'
 
 const Homepage = () => {
     return (
@@ -34,8 +35,9 @@ const Homepage = () => {
             <section className='py-8'>
                 <h2 className=" text-4xl font-bold mb-8">My Work</h2>
                 <div className=" flex gap-12 flex-wrap items-center justify-center bg-white/10 p-4 rounded-3xl">
-                    <ProjectCard bg={reactImg} name="React + Express Login" description="This app uses express, react, and mongoDB. It's a simple register/login system. The goal here was to have a backend API that the front-end utilizes." githubLink="https://github.com/Pubstar/React-Fullstack" livePageLink="https://react-fullstack-client.onrender.com/" />
                     <ProjectCard bg={moviesImg} name="Netflix UI" description="I rebuild the Netflix homepage using React and Tailwindcss, the website has no functionality as I was primarliy focused on getting the design right." githubLink="https://github.com/Pubstar/netflix" livePageLink="https://leafy-yeot-9e427e.netlify.app/" />
+                    <ProjectCard bg={chatboxImg} name="Chatbox" description="A simple chatbox made using Firebase and React, you can log-in with your Google account to chat or view the chat as a guest." githubLink="https://github.com/Pubstar/FirebaseChat/tree/main/firebasechat" livePageLink="https://chatbox-77947.firebaseapp.com/" />
+                    <ProjectCard bg={reactImg} name="React + Express Login" description="This app uses express, react, and mongoDB. It's a simple register/login system. The goal here was to have a backend API that the front-end utilizes." githubLink="https://github.com/Pubstar/React-Fullstack" livePageLink="https://react-fullstack-client.onrender.com/" />
                     <ProjectCard bg={steamImg} name="Steam Profile Info" description="Use the Steam API to get information about a users steam profile. For now you will need the users SteamID, regular usernames do not work." githubLink="https://github.com/Pubstar/Steam-User-Info" livePageLink="https://steamchecker.onrender.com/" />
                 </div>
             </section>
