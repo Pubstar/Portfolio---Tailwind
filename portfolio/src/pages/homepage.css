@@ -1,3 +1,7 @@
+body {
+    background-color: #14143c;
+}
+
 section {
     opacity: 0;
     transform: translateY(20%);
