@@ -17,8 +17,6 @@ const Homepage = () => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('animate');
-                } else {
-                    entry.target.classList.remove('animate');
                 }
             })
         })
@@ -64,7 +62,7 @@ const Homepage = () => {
                     </ul>
                 </div>
             </section>
-            <section className='py-8'>
+            <section className='py-8 pb-64'>
                 <h2 className=" text-4xl font-bold mb-8">My Work</h2>
                 <div className=" flex gap-12 flex-wrap items-center justify-center bg-white/10 p-4 rounded-3xl">
                     <ProjectCard bg={moviesImg} name="Netflix UI" description="I rebuild the Netflix homepage using React and Tailwindcss, the website has no functionality as I was primarliy focused on getting the design right." githubLink="https://github.com/Pubstar/netflix" livePageLink="https://leafy-yeot-9e427e.netlify.app/" />

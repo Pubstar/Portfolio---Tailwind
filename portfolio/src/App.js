@@ -7,7 +7,7 @@ import githubImg from './images/github.png'
 function App() {
   return (
     <BrowserRouter>
-      <div className=" bg-[#14143c] text-[#EDE7D9] font-sofia-sans tracking-wider h-full 2xl:px-80 xl:px-60 sm:px-8">
+      <div className=" bg-[#14143c] relative text-[#EDE7D9] font-sofia-sans tracking-wider h-full 2xl:px-80 xl:px-60 sm:px-8">
         <header className=" flex justify-between items-center mb-36 bg-white/10 pb-8 pt-4 px-4 rounded-b-3xl md:px-8">
           <div className=' flex items-center gap-2'>
             <span className=" cursor-pointer font-semibold">Pieter Hoek</span>
@@ -24,6 +24,10 @@ function App() {
           <Route index element={<Homepage />} />
           <Route path="contact" element={<Contact />} />
         </Routes>
+        <footer className=" h-32 w-full absolute bottom-0 left-0 flex justify-center items-center flex-col">
+          <p>Pieter Hoek &#169;</p>
+          <a href="mailto: pieterhoek@msn.com">pieterhoek@msn.com</a>
+        </footer>
       </div>
     </BrowserRouter>
   );
