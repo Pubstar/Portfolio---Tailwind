@@ -7,7 +7,7 @@ import githubImg from './images/github.png'
 function App() {
   return (
     <BrowserRouter>
-      <div className=" bg-[#14143c] relative text-[#EDE7D9] font-sofia-sans tracking-wider h-full 2xl:px-80 xl:px-60 sm:px-8">
+      <div className=" bg-gradient-to-r from-[#14143c] via-[#2f2f75] to-[#14143c] relative text-[#EDE7D9] font-sofia-sans tracking-wider h-full 2xl:px-80 xl:px-60 sm:px-8">
         <header className=" flex justify-between items-center mb-36 bg-white/10 pb-8 pt-4 px-4 rounded-b-3xl md:px-8">
           <div className=' flex items-center gap-2'>
             <span className=" cursor-pointer font-semibold">Pieter Hoek</span>
