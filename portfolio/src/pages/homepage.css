@@ -1,0 +1,8 @@
+section {
+    opacity: 0;
+    transition: all 2s;
+}
+
+.animate {
+    opacity: 1;
+}

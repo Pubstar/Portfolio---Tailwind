@@ -1,8 +1,9 @@
-import React from 'react'
+import { useEffect } from 'react';
 import ProjectCard from '../components/ProjectCard';
+import './homepage.css'
+
 import githubImg from '../images/github.png'
 import linkedinImg from '../images/linkedin.png'
-
 import moviesImg from '../images/movies.jpg'
 import reactImg from '../images/react.jpg'
 import steamImg from '../images/steam.jpg'
@@ -10,13 +11,30 @@ import chatboxImg from '../images/chatbox.jpg'
 import ArrowRightSvg from '../images/arrow-right-svg.svg'
 
 const Homepage = () => {
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                } else {
+                    entry.target.classList.remove('animate');
+                }
+            })
+        })
+
+        const allSections = document.querySelectorAll('section');
+        allSections.forEach((el) => observer.observe(el));
+    }, [])
+
+
     return (
         <div>
-            <main className="mb-36 bg-white/10 p-4 rounded-3xl md:p-10">
+            <section className="mb-36 bg-white/10 p-4 rounded-3xl md:p-10">
                 <h2 className=" text-[#FFC914] text-xl md:text-2xl">Hello, my name is Pieter,</h2>
                 <h1 className=" text-5xl mb-16 font-bold md:text-6xl">Front-end developer.</h1>
                 <p className=" text-4xl">I'm a passionate <span className=" border-b-4 border-[#FFC914]">webdeveloper</span> with the ability to create great things, usually using <span className=" border-b-4 border-[#FFC914]">React</span></p>
-            </main>
+            </section>
             <section>
                 <h2 className='text-4xl font-bold mb-8'>About me</h2>
                 <div className='mb-36 bg-white/10 pt-4 px-4 pb-2 rounded-3xl md:pt-10 md:px-10 md:pb-4'>
