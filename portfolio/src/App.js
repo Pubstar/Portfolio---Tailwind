@@ -15,9 +15,9 @@ function App() {
               <img className=' w-6 h-6 cursor-pointer' src={githubImg} alt="" />
             </a>
           </div>
-          <nav className=" flex gap-4 md:gap-8">
-            <Link to="/" className=" cursor-pointer">Home</Link>
-            <Link to="contact" className=" cursor-pointer">Contact</Link>
+          <nav className=" flex gap-4 box-border md:gap-8">
+            <Link to="/" className=" cursor-pointer border-b-2 border-white/0 hover:border-[#FFC914]">Home</Link>
+            <Link to="contact" className=" cursor-pointer border-b-2 border-white/0 hover:border-[#FFC914]">Contact</Link>
           </nav>
         </header>
         <Routes>
