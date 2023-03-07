@@ -62,7 +62,7 @@ const Homepage = () => {
                     </ul>
                 </div>
             </section>
-            <section className='pb-64'>
+            <section className='pb-32'>
                 <h2 className=" text-4xl font-bold mb-8">My Work</h2>
                 <div className="flex gap-12 flex-wrap items-center justify-center bg-white/10 p-4 md:p-10 rounded-3xl">
                     <ProjectCard bg={moviesImg} name="Netflix UI" description="I rebuild the Netflix homepage using React and Tailwindcss, the website has no functionality as I was primarliy focused on getting the design right." githubLink="https://github.com/Pubstar/netflix" livePageLink="https://leafy-yeot-9e427e.netlify.app/" />
