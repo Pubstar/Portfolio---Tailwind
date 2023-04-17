@@ -59,6 +59,7 @@ const Homepage = () => {
                         <li><img className='w-4 inline mr-2' src={ArrowRightSvg} alt="" />Node.js</li>
                         <li><img className='w-4 inline mr-2' src={ArrowRightSvg} alt="" />Firebase</li>
                         <li><img className='w-4 inline mr-2' src={ArrowRightSvg} alt="" />MongoDB</li>
+                        <li><img className='w-4 inline mr-2' src={ArrowRightSvg} alt="" />Sass</li>
                     </ul>
                 </div>
             </section>
