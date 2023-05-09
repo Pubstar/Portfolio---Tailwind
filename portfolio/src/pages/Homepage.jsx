@@ -6,6 +6,7 @@ import githubImg from '../images/github.png'
 import linkedinImg from '../images/linkedin.png'
 import moviesImg from '../images/movies.jpg'
 import reactImg from '../images/react.jpg'
+import dictionaryImg from '../images/dictionary.jpg'
 import steamImg from '../images/steam.jpg'
 import chatboxImg from '../images/chatbox.jpg'
 import ArrowRightSvg from '../images/arrow-right-svg.svg'
@@ -66,6 +67,7 @@ const Homepage = () => {
             <section className='pb-32'>
                 <h2 className=" text-4xl font-bold mb-8">My Work</h2>
                 <div className="flex gap-12 flex-wrap items-center justify-center bg-white/10 p-4 md:p-10 rounded-3xl">
+                    <ProjectCard bg={dictionaryImg} name="Online Dictionary" description="Simple dictionary using the dictionary API, including voice playback." githubLink="https://github.com/Pubstar/dictionary" livePageLink="https://zippy-moonbeam-559353.netlify.app/" />
                     <ProjectCard bg={moviesImg} name="Netflix UI" description="I rebuild the Netflix homepage using React and Tailwindcss, the website has no functionality as I was primarliy focused on getting the design right." githubLink="https://github.com/Pubstar/netflix" livePageLink="https://leafy-yeot-9e427e.netlify.app/" />
                     <ProjectCard bg={chatboxImg} name="Chatbox" description="A simple chatbox made using Firebase and React, you can log-in with your Google account to chat or view the chat as a guest." githubLink="https://github.com/Pubstar/FirebaseChat/tree/main/firebasechat" livePageLink="https://chatbox-7aa17.web.app/" />
                     <ProjectCard bg={reactImg} name="React + Express Login" description="This app uses express, react, and mongoDB. It's a simple register/login system. The goal here was to have a backend API that the front-end utilizes." githubLink="https://github.com/Pubstar/React-Fullstack" livePageLink="https://react-fullstack-client.onrender.com/" />
