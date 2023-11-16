@@ -18,7 +18,7 @@ function App() {
             </a>
           </div>
           <nav className=" flex gap-2 box-border md:gap-8">
-            <a href="/CV_Pieter_Hoek.docx" className=" cursor-pointer" download>Download CV</a>
+            <a href="/CV_Pieter_Hoek_Dev.docx" className=" cursor-pointer" download>Download CV</a>
             <Link to="/" className=" cursor-pointer border-b-2 border-white/0 hover:border-[#FFC914]">Home</Link>
             <Link to="contact" className=" cursor-pointer border-b-2 border-white/0 hover:border-[#FFC914]">Contact</Link>
           </nav>
