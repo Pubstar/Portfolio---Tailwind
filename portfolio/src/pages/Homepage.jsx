@@ -13,7 +13,9 @@ import ArrowRightSvg from '../images/arrow-right-svg.svg'
 
 const Homepage = () => {
 
-    useEffect(() => {
+    // gets all elements in view so we can animate on scroll. Disabled because it got annoying
+
+/*     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
@@ -24,15 +26,15 @@ const Homepage = () => {
 
         const allSections = document.querySelectorAll('section');
         allSections.forEach((el) => observer.observe(el));
-    }, [])
+    }, []) */
 
 
     return (
         <div>
-            <section className="mb-36 bg-white/10 p-4 rounded-3xl md:p-10">
+            <section className="mb-96 p-4 rounded-3xl md:p-10 text-center">
                 <h2 className=" text-[#FFC914] text-xl md:text-2xl">Hello, my name is Pieter,</h2>
                 <h1 className=" text-5xl mb-16 font-bold md:text-6xl">Front-end developer.</h1>
-                <p className=" text-4xl">I'm a passionate <span className=" border-b-4 border-[#FFC914]">webdeveloper</span> with the ability to create great things, usually using <span className=" border-b-4 border-[#FFC914]">React</span></p>
+                <p className=" text-4xl leading-relaxed">I'm a passionate <span className=" border-b-4 border-[#FFC914]">webdeveloper</span> with the ability to create great things, primarily focused on <span className=" border-b-4 border-[#FFC914]">React.</span></p>
             </section>
             <section>
                 <h2 className='text-4xl font-bold mb-8'>About me</h2>
@@ -61,6 +63,7 @@ const Homepage = () => {
                         <li><img className='w-4 inline mr-2' src={ArrowRightSvg} alt="" />Firebase</li>
                         <li><img className='w-4 inline mr-2' src={ArrowRightSvg} alt="" />MongoDB</li>
                         <li><img className='w-4 inline mr-2' src={ArrowRightSvg} alt="" />Sass</li>
+                        <li><img className='w-4 inline mr-2' src={ArrowRightSvg} alt="" />TypeScript</li>
                     </ul>
                 </div>
             </section>

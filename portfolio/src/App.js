@@ -3,14 +3,16 @@ import Homepage from './pages/Homepage'
 import Contact from './pages/Contact'
 import { Link } from "react-router-dom";
 import githubImg from './images/github.png'
+import meImg from './images/me.jfif'
 
 function App() {
   return (
     <BrowserRouter>
-      <div className=" bg-gradient-to-r from-[#14143c] via-[#2f2f75] to-[#14143c] relative text-[#EDE7D9] font-sofia-sans tracking-wider h-full 2xl:px-80 xl:px-60 sm:px-8">
+      <div className=" bg-gradient-to-r from-[#14143c] via-[#2f2f75] to-[#14143c] relative text-[#EDE7D9] font-sofia-sans tracking-wider h-full 2xl:px-96 xl:px-60 sm:px-8">
         <header className=" border-2 border-t-0 border-[#FFC914] flex justify-between items-center mb-36 bg-white/10 pb-8 pt-4 px-4 rounded-b-3xl md:px-8">
           <div className=' flex items-center gap-2'>
-            <span className=" cursor-pointer font-semibold">Pieter Hoek</span>
+            <img className=' w-20 h-20 rounded-full' src={meImg} alt="" />
+            <span className=" cursor-pointer font-bold mx-1.5">Pieter Hoek</span>
             <a target="_blank" rel="noreferrer" href="https://github.com/Pubstar">
               <img className=' w-6 h-6 cursor-pointer' src={githubImg} alt="" />
             </a>
