@@ -33,7 +33,7 @@ const Homepage = () => {
             <section className="mb-96 p-4 rounded-3xl md:p-10 text-center">
                 <h2 className=" text-[#FFC914] text-xl md:text-2xl">Hello, my name is Pieter,</h2>
                 <h1 className=" text-5xl mb-16 font-bold md:text-6xl">Front-end developer.</h1>
-                <p className=" text-4xl leading-relaxed">I'm a passionate <span className=" border-b-4 border-[#FFC914]">webdeveloper</span> with the ability to create great things, primarily focused on <span className=" border-b-4 border-[#FFC914]">React.</span></p>
+                <p className=" md:text-4xl md:leading-relaxed">I'm a passionate <span className=" border-b-4 border-[#FFC914]">webdeveloper</span> with the ability to create great things, primarily focused on <span className=" border-b-4 border-[#FFC914]">React.</span></p>
             </section>
             <section>
                 <h2 className='text-4xl font-bold mb-8'>About me</h2>

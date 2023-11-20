@@ -11,13 +11,13 @@ function App() {
       <div className=" bg-gradient-to-r from-[#14143c] via-[#2f2f75] to-[#14143c] relative text-[#EDE7D9] font-sofia-sans tracking-wider h-full 2xl:px-96 xl:px-60 sm:px-8">
         <header className=" border-2 border-t-0 border-[#FFC914] flex justify-between items-center mb-36 bg-white/10 pb-8 pt-4 px-4 rounded-b-3xl md:px-8">
           <div className=' flex items-center'>
-            <img className=' w-20 h-20 rounded-full mr-3' src={meImg} alt="" />
-            <span className="font-bold">Pieter Hoek</span>
+            <img className='w-20 h-20 rounded-full mr-3 hidden sm:block' src={meImg} alt="" />
+            <span className="font-bold w-[60%] sm:w-1/2">Pieter Hoek</span>
             <a target="_blank" rel="noreferrer" href="https://github.com/Pubstar">
               <img className=' w-6 h-6 cursor-pointer' src={githubImg} alt="" />
             </a>
           </div>
-          <nav className=" flex gap-2 box-border md:gap-8">
+          <nav className=" flex gap-2 box-border flex-col md:gap-8 md:flex-row">
             <a href="/CV_Pieter_Hoek_Dev.docx" className=" cursor-pointer" download>Download CV</a>
             <Link to="/" className=" cursor-pointer border-b-2 border-white/0 hover:border-[#FFC914]">Home</Link>
             <Link to="contact" className=" cursor-pointer border-b-2 border-white/0 hover:border-[#FFC914]">Contact</Link>
