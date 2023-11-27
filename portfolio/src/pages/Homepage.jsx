@@ -63,6 +63,7 @@ const Homepage = () => {
                         <li><img className='w-4 inline mr-2' src={ArrowRightSvg} alt="" />MongoDB</li>
                         <li><img className='w-4 inline mr-2' src={ArrowRightSvg} alt="" />Sass</li>
                         <li><img className='w-4 inline mr-2' src={ArrowRightSvg} alt="" />TypeScript</li>
+                        <li><img className='w-4 inline mr-2' src={ArrowRightSvg} alt="" />TailwindCSS</li>
                     </ul>
                 </div>
             </section>
